@@ -22,11 +22,11 @@ if __name__ == "__main__":
     try:
         app.start()
     except (ApiIdInvalid, ApiIdPublishedFlood):
-        raise Exception("Your API_ID/API_HASH is not valid.")
+        raise Exception("الايبي ايدي أو الايبي هاش خطا.")
     except AccessTokenInvalid:
-        raise Exception("Your BOT_TOKEN is not valid.")
+        raise Exception("توكن بوت خطا.")
     uname = app.me.username
-    logging.info(f"@{uname} is now running!")
+    logging.info(f"@{uname} الان شغال!")
     idle()
     app.stop()
-    logging.info("Bot stopped. Alvida!")
+    logging.info("توقف بوت")
