@@ -3,11 +3,11 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-API_ID = os.getenv("API_ID", "").strip()
-API_HASH = os.getenv("API_HASH", "").strip()
-BOT_TOKEN = os.getenv("BOT_TOKEN", "").strip()
+API_ID = os.getenv("API_ID", "20918056").strip()
+API_HASH = os.getenv("API_HASH", "6d9b34bdc4bbd5517b14968b0ed76ad7").strip()
+BOT_TOKEN = os.getenv("BOT_TOKEN", "1434831443:AAFe7jX1FVIlgkyRnJ6Kjr72pXQbzFIRc4I").strip()
 DATABASE_URL = os.getenv("DATABASE_URL", "").strip() # Not a necessary variable anymore but you can add to get stats
-MUST_JOIN = os.getenv("MUST_JOIN", "")
+MUST_JOIN = os.getenv("MUST_JOIN", "iqthon")
 
 if not API_ID:
     raise SystemExit("No API_ID found. Exiting...")
